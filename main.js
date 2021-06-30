@@ -15,11 +15,16 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-
-
+const convert2string = (convert2String) =>{
+  return convert2String.toString();
+}
+console.log("to string:", convert2string(55));
 
 // Write a JavaScript program to convert a string to the number.
-
+const convert2number = (convert2number) =>{
+  return parseInt(convert2number);
+}
+console.log("number:", convert2number("54"));
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -29,22 +34,43 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
-  
-
+  const userInput = (whatIs) =>{
+    return typeof whatIs
+  }
+console.log("data type:", userInput("22"));
   
 // Write a JavaScript program that adds 2 numbers together.
-
-
+const add2 = (num1,num2) => {
+   return num1+num2
+}
+console.log("add two numbers:", add2(1,3));
 
 // Write a JavaScript program that runs only when 2 things are true.
-
+const twoTrue = (thing1,thing2) =>{
+   if (thing1 && thing2){
+      return true
+  }
+   
+}
+console.log("two things true:", twoTrue(0,1));
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-
+const oneTrue = (thing1,thing2) =>{
+  if (thing1 || thing2) {
+  return true
+  }
+}
 
 
 // Write a JavaScript program that runs when both things are not true.  
+const neitherTrue = (thing1,thing2) =>{
+  if (!thing1 && !thing2){
+  return true
+  }
+  else return false
+}
+console.log("both things false:", neitherTrue(0,false))
 
 // ***************************
 //         PART TWO
