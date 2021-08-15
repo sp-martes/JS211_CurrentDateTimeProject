@@ -1,48 +1,3 @@
-// answer = Store a solution, string, as a global variable
-//correctGuesses = string of correct letters and dashes
-//Array that shows guessed letters
-
-//hangMan(letter) function
-    // takes users guess 
-    // checks the solution word for indexOf guessed letter 
-    // changes the letter in correct guess string
-    // pushes 
-    //Takes in a letter
-
-    //Loops over the solution string 
-
-    //If a letter in the solution string matches the input letter, return the index
-
-
-    //Else, prompts new letter
-
- //Print board function
-
-    //take the index(es) returned from correct letter(s) function
-
-    //find the letters of the solution string at the index(es) 
-
-    //create new string with a space for each letter in the solution string
-
-    //fill those letters and dashes into the new string
-
-    //console.log()
-
-    //update the hangman variable
-
-//detect win function
-
-    //takes in both hangman (guess) and the solution
-
-    // compares them
-
-    //if the strings are the same = you win
-
-    //when the length of the guessed letters array = 6, YOU LOSE
-    //Hangman function(guessedLetter)
-    //correct letter function(guessedLetter)
-    //print board(indexOfCorrectlyGuessedLetter)
-    // detect win(solutionString, guessedString)
 'use strict';
 
 const readline = require('readline');
@@ -105,7 +60,7 @@ const hangMan = (guess) => {
         }
         
     if(!board.solution.includes(letter)){
-        board.guesses -=1
+        board.guesses -= 1
     }    
         board.letters.push(letter)
         board.hiddenWord = wordArray.join('')
