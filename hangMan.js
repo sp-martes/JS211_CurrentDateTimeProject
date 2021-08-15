@@ -96,7 +96,6 @@ const startGame = () =>{
             createWord(word)
             console.log('\n','\n','\n','\n','\n','\n','\n','\n','\n','\n','\n','\n') 
             if(createWord(word) == false){
-                resetBoard()
                 console.log('Please choose another word. hint: Create a word with letters a-z. Use 3 or more letters with no spaces')
                 return gameOn()
             }
@@ -113,6 +112,7 @@ const player2Turn = () => {
             hangMan(guess);
             if(winOrLose()){
                 resetBoard()
+                console.log('Play Again?')
                 return gameOn()
             }
             player2Turn()
